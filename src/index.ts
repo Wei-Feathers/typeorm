@@ -87,7 +87,7 @@ AppDataSource.initialize()
 
 		const iUsers: Music[] = [];
 
-		for (let i = 0; i < 1000; i++) {
+		for (let i = 0; i < 1100; i++) {
 			const music = new Music();
 			music.setMusic(song);
 			iUsers.push(music);

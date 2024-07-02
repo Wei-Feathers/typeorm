@@ -44,10 +44,10 @@ export class Music{
     @Column('integer', { nullable: true })
     dt: number | undefined
 
-    @Column('integer', { nullable: true })
+    @Column('simple-json', { nullable: true })
     h: number | undefined
 
-    @Column('integer', { nullable: true })
+    @Column('simple-json', { nullable: true })
     m: number | undefined
 
     @Column('simple-json', { nullable: true })
@@ -135,7 +135,7 @@ export class Music{
     @Column('integer', { nullable: true })
     cp: number | undefined
 
-    @Column('integer', { nullable: true })
+    @Column('text', { nullable: true })
     publishTime: number | undefined
 
 
