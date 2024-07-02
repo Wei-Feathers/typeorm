@@ -1,6 +1,6 @@
 import "reflect-metadata"
 import { DataSource } from "typeorm"
-import { User } from "./entity/User"
+import { Music } from "./entity/User"
 
 export const AppDataSource = new DataSource({
     name: "default",
@@ -8,11 +8,11 @@ export const AppDataSource = new DataSource({
     host: "localhost",
     port: 3306,
     username: "myuser",
-    password: "123456",
+    password: "mypassword",
     database: "mydatabase",
     synchronize: true,
     logging: false,
-    entities: [User],
+    entities: [Music],
     migrations: [],
     subscribers: [],
 })

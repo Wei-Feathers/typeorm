@@ -7,3 +7,9 @@ Steps to run this project:
 3. Run `npm start` command
 
 docker run --name mysql-container -e MYSQL_ROOT_PASSWORD=rootpassword -e MYSQL_DATABASE=mydatabase -e MYSQL_USER=myuser -e MYSQL_PASSWORD=mypassword -p 3306:3306 -d mysql:latest
+
+### 编译ts
+npx tsc
+
+### 性能分析工具
+clinic flame -- node build/index.js
